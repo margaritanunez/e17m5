@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/coin_adobe_express" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/entradatxt"
         android:layout_width="129dp"
         android:layout_height="60dp"
         android:layout_marginStart="40dp"
@@ -26,24 +26,28 @@
         android:background="#41DDCE"
         android:ems="10"
         android:gravity="center"
+        android:hint="Convertir"
         android:inputType="number"
-        android:text="Name"
+        android:textColorHint="#CB231616"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/salidatxt"
         android:layout_width="129dp"
         android:layout_height="60dp"
         android:layout_marginTop="50dp"
         android:background="#41DDCE"
         android:ems="10"
         android:gravity="center"
+        android:hint="A"
         android:inputType="number"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        android:textColorHint="#CB231616"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/entradatxt"
+        app:layout_constraintStart_toStartOf="@+id/entradatxt"
+        app:layout_constraintTop_toBottomOf="@+id/entradatxt" />
 
     <Spinner
         android:id="@+id/spinner1"
@@ -53,7 +57,7 @@
         android:background="#41DDCE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/editTextText2"
+        app:layout_constraintStart_toEndOf="@+id/salidatxt"
         app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
     <Spinner
@@ -64,34 +68,34 @@
         android:background="#41DDCE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:layout_constraintStart_toEndOf="@+id/entradatxt"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/convertirButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
         android:backgroundTint="#418EF2"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        android:text="Convertir"
+        app:layout_constraintEnd_toStartOf="@+id/resetearbutton"
         app:layout_constraintHorizontal_bias="0.396"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/salidatxt" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/resetearbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
         android:layout_marginEnd="72dp"
         android:backgroundTint="#418EF2"
-        android:text="Button"
+        android:text="Resetear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/resultadotv"
         android:layout_width="354dp"
         android:layout_height="42dp"
         android:layout_marginStart="32dp"
@@ -99,7 +103,8 @@
         android:layout_marginBottom="64dp"
         android:backgroundTint="#41DDCE"
         android:gravity="center"
-        android:text="TextView"
+        android:text="Resultado"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
